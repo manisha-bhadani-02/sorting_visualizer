@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <i class="fas fa-chart-bar"></i>
+                <span>Sorting Visualizer</span>
+            </div>
+            <div class="array-inputs">
+                <label for="a_size"><i class="fas fa-sliders-h"></i> Size</label>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <label for="a_speed"><i class="fas fa-tachometer-alt"></i> Speed</label>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate"><i class="fas fa-random"></i> New Array</button>
+            </div>
+            <div class="header_right">
+                <div class="algos">
+                    <button title="Bubble Sort">Bubble</button>
+                    <button title="Selection Sort">Selection</button>
+                    <button title="Insertion Sort">Insertion</button>
+                    <button title="Merge Sort">Merge</button>
+                    <button title="Quick Sort">Quick</button>
+                    <button title="Heap Sort" style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="Info_Cont1">
+                <h3><i class="fas fa-clock"></i> Time Complexity</h3>
+                <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+                    <div class="Pair_Definitions">
+                        <p class="Sub_Heading">Worst case:</p>
+                        <p id="Time_Worst"></p>
+                    </div>
+                    <div class="Pair_Definitions">
+                        <p class="Sub_Heading">Average case:</p>
+                        <p id="Time_Average"></p>
+                    </div>
+                    <div class="Pair_Definitions">
+                        <p class="Sub_Heading">Best case:</p>
+                        <p id="Time_Best"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="array_container"></div>
+            <div id="Info_Cont2">
+                <h3><i class="fas fa-database"></i> Space Complexity</h3>
+                <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+                    <div class="Pair_Definitions">
+                        <p class="Sub_Heading">Worst case:</p>
+                        <p id="Space_Worst"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <span>Made with <i class="fas fa-heart" style="color:#e25555;"></i> by Manisha Bhadani</span>
+            <span>| &copy; 2025 Sorting Visualizer</span>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/visualizations.js"></script>
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+</html>
